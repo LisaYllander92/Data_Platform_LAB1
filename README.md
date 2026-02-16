@@ -16,6 +16,9 @@
       2. In git:
          - git clone git@github.com:LisaYllander92/Data_Platform_LAB1.git
          - git pull origin main 
+      
+NOTE: Add collaborators to repo in GitHub to work together 
    
 ### Create new branch 
-- In terminal git checkout -b BRANCHNAME
+- In terminal git checkout -b <branchname>
+- git checkout <branchname> --> to switch branch

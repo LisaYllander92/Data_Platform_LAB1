@@ -3,6 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.14" jdkType="Python SDK" />
+<<<<<<< HEAD
+=======
+    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
+>>>>>>> d14c189b0fae2662fb930365d3133944ad4aa784
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

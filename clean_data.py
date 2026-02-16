@@ -45,3 +45,9 @@ cleaning_data['created_at'] = pd.to_datetime(cleaning_data['created_at'], errors
 print(cleaning_data["created_at"])
 
 print(cleaning_data)
+
+# Fill out empty values with 'None'
+cleaning_data = cleaning_data.fillna("None")
+
+# Create new csv-file with cleaned data
+cleaning_data.to_csv("products_cleaned.csv", index=False)

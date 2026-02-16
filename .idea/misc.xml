@@ -4,6 +4,7 @@
 <<<<<<< HEAD
     <option name="sdkName" value="Python 3.12" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14" project-jdk-type="Python SDK" />
 =======
     <option name="sdkName" value="Python 3.14" />
@@ -13,4 +14,7 @@
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
 >>>>>>> d14c189b0fae2662fb930365d3133944ad4aa784
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="uv (Data_Platform_LAB1)" project-jdk-type="Python SDK" />
+>>>>>>> 6f3cc0266a87861167991ce0ea511df074103161
 </project>

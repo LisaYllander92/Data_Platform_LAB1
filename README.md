@@ -19,9 +19,10 @@
       
 NOTE: Add collaborators to repo in GitHub to work together 
    
-### Create new branch 
-- In terminal git checkout -b <branchname>
+### Create and work with branches 
+- In terminal git checkout -b <branchname> --> creates and switches to branch
 - git checkout <branchname> --> to switch branch
+- git push origin <branchname> --> push branch changes to GitHub
 
 ### Ingest data from csv-file
 1. df = pd.read_csv("products.csv")

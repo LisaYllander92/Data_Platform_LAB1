@@ -3,7 +3,7 @@ from websockets.cli import print_during_input
 
 df = pd.read_csv("products.csv", sep=";")
 
-missing_df = pd.DataFrame
+missing_df = df.copy()
 
 print(missing_df.isna())
 

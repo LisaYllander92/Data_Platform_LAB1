@@ -1,28 +1,56 @@
 ## Data Platform LAB 1
 
 ### Step by step
-1. Create and clone repo:
-    - ### CREATE
-      1. Create repo in GitHub 
-      2. In git: 
-        - git init
-        - git add README.md
-        - git commit -m "first commit"
-        - git branch -M main
-        - git remote add origin git@github.com:LisaYllander92/Data_Platform_LAB1.git
-        - git push -u origin main
-    - ### CLONE 
-      1. Clone repo in GitHub
-      2. In git:
-         - git clone git@github.com:LisaYllander92/Data_Platform_LAB1.git
-         - git pull origin main 
-      
-NOTE: Add collaborators to repo in GitHub to work together 
+## Create and clone repo
+CREATE:
+1. Create repo in GitHub 
+2. In git:
+```bash
+git init
+```
+```bash
+git add README.md
+```
+```bash
+git commit -m "first commit"
+```
+```bash
+git branch -M main
+```
+```bash
+git remote add origin git@github.com:LisaYllander92/Data_Platform_LAB1.git
+```
+```bash
+git push -u origin main
+```
+
+CLONE to work on same repo
+1. Add collaborators to repo in GitHub to work together 
+2. Clone repo in GitHub
+3. In git:
+```bash
+git clone git@github.com:LisaYllander92/Data_Platform_LAB1.git
+```
+```bash
+git pull origin main 
+```
    
 ### Create and work with branches 
-- In terminal git checkout -b <branchname> --> creates and switches to branch
-- git checkout <branchname> --> to switch branch
-- git push origin <branchname> --> push branch changes to GitHub
+To creates and switches to branch 
+```bash
+git checkout -b <branchname>
+```
+To switch branch
+```bash 
+git checkout <branchname>
+```
+To push branch changes to GitHub
+```bash
+git push origin <branchname>
+```
 
 ### Ingest data from csv-file
 1. df = pd.read_csv("products.csv")
+
+
+

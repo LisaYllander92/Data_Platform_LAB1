@@ -1,3 +1,5 @@
-id,name,price,currency,created_at
-,jacket,-200, SEK ,2024-13-01
-,hat,free,SEK,
+id,name,price,currency,created_at,is_rejected,is_flagged
+SKU-1005,,,,,True,False
+SKU-1006,Designer Coat,,SEK,2024-05-01 00:00:00,True,False
+SKU-1043,Cardigan,,SEK,2024-11-15 00:00:00,True,False
+SKU-1052,Coat,,SEK,2025-01-10 00:00:00,True,False

@@ -1,7 +1,7 @@
 import pandas as pd
 from websockets.cli import print_during_input
 
-from price_analytics import analytics
+# from price_analytics import analytics
 
 df = pd.read_csv("products.csv", sep=";")
 cleaning_data = df.copy()

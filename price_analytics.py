@@ -44,3 +44,6 @@ price_analysis = price_analysis_df.copy()
 most_expensive_products = price_analysis.nlargest(10, "price")
 print("Most expensive products:")
 print(most_expensive_products[["name", "price"]])
+
+# Top 10 most diviant prices
+print()

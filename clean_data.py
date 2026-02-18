@@ -4,14 +4,13 @@ from websockets.cli import print_during_input
 from price_analytics import analytics
 
 df = pd.read_csv("products.csv", sep=";")
-
 cleaning_data = df.copy()
 
 print(cleaning_data)
 
 # Cleaning 'id'
 # Removes lines where 'id' is missing
-cleaning_data = cleaning_data.dropna(subset=['id'])
+# cleaning_data = cleaning_data.dropna(subset=['id'])
 # Remove duplicates
 cleaning_data["id"] = cleaning_data["id"].drop_duplicates()
 cleaning_data["id"] = cleaning_data["id"].astype("string")
@@ -33,7 +32,7 @@ print(cleaning_data["name"])
 # errors='coerce' transforms "not_available" or "free" to NaN automatically
 cleaning_data["price"] = pd.to_numeric(cleaning_data["price"], errors='coerce')
 # Doesn't save negative values
-cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
+#cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
 
 print(cleaning_data["price"])
 

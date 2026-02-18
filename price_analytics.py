@@ -52,7 +52,7 @@ most_expensive_products.to_csv("Top_expensive_products.csv", index=False)
 
 # Top 10 most deviant prices
 deviant_price_df = pd.read_csv("products.csv", sep=';')
-deviant_price = deviant_price_df.copy()
+deviant_price =deviant_price_df.copy()
 
 deviant_price['price'] = pd.to_numeric(deviant_price['price'], errors='coerce')
 most_expensive_price = deviant_price.nlargest(2, "price")

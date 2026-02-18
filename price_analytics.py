@@ -41,7 +41,7 @@ price_analysis_df = pd.read_csv("products_cleaned.csv")
 price_analysis = price_analysis_df.copy()
 
 # Top 10 most expensive products
-most_expensive_products = price_analysis.nlargest(10, "price")
+most_expensive_products = price_analysis.nlargest(10, "price").copy()
 print("Most expensive products:")
 print(most_expensive_products[["name", "price"]])
 
@@ -55,13 +55,13 @@ deviant_price_df = pd.read_csv("products.csv", sep=';')
 deviant_price =deviant_price_df.copy()
 
 deviant_price['price'] = pd.to_numeric(deviant_price['price'], errors='coerce')
-most_expensive_price = deviant_price.nlargest(2, "price")
+most_expensive_price = deviant_price.nlargest(2, "price").copy()
 print(most_expensive_price)
 
-most_cheep_price = deviant_price.nsmallest(3, "price")
+most_cheep_price = deviant_price.nsmallest(3, "price").copy()
 print(most_cheep_price)
 
-missing_prices = deviant_price[deviant_price["price"].isna()]
+missing_prices = deviant_price[deviant_price["price"].isna()].copy()
 print(missing_prices)
 
 # Save top deviant prices in csv-file

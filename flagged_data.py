@@ -11,8 +11,6 @@ print("\nMissing IDs:")
 print(branching_df[branching_df["id"].isna()][["id", "name", "price"]])
 print("=== END DEBUG ===\n")
 
-
-# VIKTIGT: Konvertera price till numerisk direkt
 branching_df["price"] = pd.to_numeric(branching_df["price"], errors='coerce')
 
 # --- CONDITIONS ---

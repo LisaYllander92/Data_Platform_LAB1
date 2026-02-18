@@ -1,6 +1,8 @@
 import pandas as pd
 from websockets.cli import print_during_input
 
+from price_analytics import analytics
+
 df = pd.read_csv("products.csv", sep=";")
 
 cleaning_data = df.copy()
@@ -30,6 +32,8 @@ print(cleaning_data["name"])
 # Cleaning 'price'
 # errors='coerce' transforms "not_available" or "free" to NaN automatically
 cleaning_data["price"] = pd.to_numeric(cleaning_data["price"], errors='coerce')
+# Doesn't save negative values
+cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
 
 print(cleaning_data["price"])
 
@@ -47,7 +51,7 @@ print(cleaning_data["created_at"])
 print(cleaning_data)
 
 # Fill out empty values with 'None'
-cleaning_data = cleaning_data.fillna("None")
+#cleaning_data = cleaning_data.fillna("None")
 
 # Create new csv-file with cleaned data
 cleaning_data.to_csv("products_cleaned.csv", index=False)

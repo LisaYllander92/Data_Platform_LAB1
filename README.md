@@ -1,7 +1,7 @@
 ## Data Platform LAB 1
 
 ### Developers of this project
-![Lisa & Rickard](img.png).
+<img src="img.png" alt="Lisa & Rickard" width="600"> 
 
 ### Step by step
 ## Create repo

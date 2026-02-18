@@ -49,8 +49,6 @@ To push branch changes to GitHub
 git push origin <branchname>
 ```
 
-### Ingest data from csv-file
-1. df = pd.read_csv("products.csv")
 
 
 

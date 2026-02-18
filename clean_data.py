@@ -32,7 +32,7 @@ print(cleaning_data["name"])
 # errors='coerce' transforms "not_available" or "free" to NaN automatically
 cleaning_data["price"] = pd.to_numeric(cleaning_data["price"], errors='coerce')
 # Doesn't save negative values
-cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
+#cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
 
 print(cleaning_data["price"])
 

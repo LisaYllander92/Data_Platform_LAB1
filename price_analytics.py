@@ -45,5 +45,9 @@ most_expensive_products = price_analysis.nlargest(10, "price")
 print("Most expensive products:")
 print(most_expensive_products[["name", "price"]])
 
-# Top 10 most diviant prices
-print()
+# Top 10 most deviant prices
+deviant_price_df = pd.read_csv("products.csv", sep=';')
+deviant_price =diviant_price_df.copy()
+
+most_expensive_price = deviant_price.nlargest(3, "price")
+print(most_expensive_price)

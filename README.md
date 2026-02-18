@@ -1,7 +1,10 @@
 ## Data Platform LAB 1
 
+### Developers of this project
+![Lisa & Rickard](img.png).
+
 ### Step by step
-## Create and clone repo
+## Create repo
 CREATE:
 1. Create repo in GitHub 
 2. In git:
@@ -24,7 +27,7 @@ git remote add origin git@github.com:LisaYllander92/Data_Platform_LAB1.git
 git push -u origin main
 ```
 
-CLONE to work on same repo
+### CLONE to work on same repo
 1. Add collaborators to repo in GitHub to work together 
 2. Clone repo in GitHub
 3. In git:

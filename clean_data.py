@@ -4,8 +4,7 @@ df = pd.read_csv("products.csv", sep=";")
 cleaning_data = df.copy()
 
 """ ----Cleaning 'id'---- """
-# Removes lines where 'id' is missing
-# cleaning_data = cleaning_data.dropna(subset=['id'])
+
 # Remove duplicates
 cleaning_data["id"] = cleaning_data["id"].drop_duplicates()
 cleaning_data["id"] = cleaning_data["id"].astype("string")
@@ -24,24 +23,19 @@ print(cleaning_data["name"])
 """ ----Cleaning 'price'---- """
 # errors='coerce' transforms "not_available" or "free" to NaN automatically
 cleaning_data["price"] = pd.to_numeric(cleaning_data["price"], errors='coerce')
-
-# Doesn't save negative values
-#cleaning_data = cleaning_data[cleaning_data["price"] >= 0]
 print(cleaning_data["price"])
 
 """ ----Cleaning 'currency'---- """
-cleaning_data["created_at"] = cleaning_data["created_at"].astype("string")
 cleaning_data["currency"] = cleaning_data["currency"].str.strip()
 cleaning_data["currency"] = cleaning_data["currency"].str.upper()
 print(cleaning_data["currency"])
 
 """ ----Cleaning 'created at'---- """
 # Only allowing valid format on date (YYYY-MM-DD)
+cleaning_data["created_at"] = cleaning_data["created_at"].astype("string")
 cleaning_data['created_at'] = pd.to_datetime(cleaning_data['created_at'], errors='coerce', yearfirst=True)
 print(cleaning_data["created_at"])
 
-# Fill out empty values with 'None'
-#cleaning_data = cleaning_data.fillna("None")
 
 # Create new csv-file with cleaned data
 cleaning_data.to_csv("products_cleaned.csv", index=False)

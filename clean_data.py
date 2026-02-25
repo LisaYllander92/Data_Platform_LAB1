@@ -6,7 +6,7 @@ cleaning_data = df.copy()
 """ ----Cleaning 'id'---- """
 
 # Remove duplicates
-cleaning_data["id"] = cleaning_data["id"].drop_duplicates()
+cleaning_data = cleaning_data.drop_duplicates(subset=["id"])
 cleaning_data["id"] = cleaning_data["id"].astype("string")
 cleaning_data["id"] = cleaning_data["id"].str.strip()
 cleaning_data["id"] = cleaning_data["id"].str.upper()

@@ -1,56 +1,50 @@
-## Data Platform LAB 1
+# Data Platform LAB 1 - Data Pipeline: Product Ingestion & Validation 🚀
 
-### Developers of this project
-<img src="img.png" alt="Lisa & Rickard" width="600"> 
+### Utvecklat av Lisa Yllander & Rickard Garnau
+<img src="img.png" alt="Lisa & Rickard" width="400"> 
 
-### Step by step
-## Create repo
-CREATE:
-1. Create repo in GitHub 
-2. In git:
-```bash
-git init
-```
-```bash
-git add README.md
-```
-```bash
-git commit -m "first commit"
-```
-```bash
-git branch -M main
-```
-```bash
-git remote add origin git@github.com:LisaYllander92/Data_Platform_LAB1.git
-```
-```bash
-git push -u origin main
-```
+## 📋 Projektöversikt
+Detta projekt demonstrerar en komplett ETL-pipeline byggd i Python. Syftet är att hantera produktdata genom att läsa in rådata, genomföra avancerad datatvätt (cleaning), identifiera avvikelser och generera analytiska underlag.
 
-### CLONE to work on same repo
-1. Add collaborators to repo in GitHub to work together 
-2. Clone repo in GitHub
-3. In git:
+## 🛠 Teknikstack
+* Programmering & Logik:
+    * Python – Huvudspråk för pipelinen.
+    * Pandas – För kraftfull datamanipulering och transformering.
+    * Pydantic – För strikt datavalidering och schemakontroll.
+* Datahantering:
+    * CSV – Används som format för både rådata (Ingestion) och slutresultat (Access).
+    * ETL-metodik – Strukturerat flöde för Extract, Transform, Load.
+* Verktyg & Miljö:
+    * uv – Modern och blixtsnabb pakethantering och miljöhantering.
+    * Git & GitHub – Versionshantering med ett strukturerat Feature Branch Workflow.
+
+## 📊 Analys & Resultat
+Pipelinen genererar automatiskt följande insikter:
+* Analytics Summary: Aggregerad data med snittpris, median och statistik över saknade värden.
+* Price Analysis: Identifiering av de 10 dyraste produkterna samt prisavvikelser.
+* Data Integrity: En dedikerad rapport över avvisade produkter för att säkerställa datakvalitet i mål-systemet.
+
+## 💻 Installation & Körning
+Vi använder uv för en snabb och säker utvecklingsmiljö. 
+1. Klona repot: 
 ```bash
 git clone git@github.com:LisaYllander92/Data_Platform_LAB1.git
 ```
+2. Synka miljön: 
 ```bash
-git pull origin main 
+uv sync
 ```
-   
-### Create and work with branches 
-To creates and switches to branch 
+Kör programmet:
 ```bash
-git checkout -b <branchname>
+uv run <filnamn.py>
 ```
-To switch branch
-```bash 
-git checkout <branchname>
-```
-To push branch changes to GitHub
-```bash
-git push origin <branchname>
-```
+
+## 🤝 Workflow & Samarbete
+Vi har arbetat med en Feature Branch Workflow för att säkerställa en stabil main-branch.
+1. Add collaborators to repo in GitHub to work together 
+2. Skapa branch: git checkout -b feature/namn
+3. Synka: git pull origin main
+4. Pusha: git push origin feature/namn
 
 
 
